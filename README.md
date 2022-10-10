@@ -24,5 +24,5 @@ docker exec --interactive --tty broker kafka-console-consumer --bootstrap-server
 ```
 ### With key
 ```
-docker exec --interactive --tty broker kafka-console-consumer --bootstrap-server broker:9092 --topic quickstart --from-beginning --property "key.separator=-" --property "parse.key=true"
+docker exec --interactive --tty broker kafka-console-consumer --bootstrap-server broker:9092 --topic quickstart --from-beginning --property "key.separator=-" --property "print.key=true"
 ```
