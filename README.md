@@ -8,6 +8,10 @@ docker exec broker kafka-topics --bootstrap-server broker:9092 --create --topic 
 ```
 docker exec broker kafka-topics --bootstrap-server broker:9092 --list
 ```
+## List the consumer groups
+```
+docker exec broker kafka-consumer-groups --bootstrap-server broker:9092 --list
+```
 ## Write messages to the topic
 ### Without key
 ```
