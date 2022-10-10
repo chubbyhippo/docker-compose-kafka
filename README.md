@@ -13,6 +13,10 @@ docker exec broker kafka-topics --bootstrap-server broker:9092 --list
 ```
 docker exec --interactive --tty broker kafka-console-producer --bootstrap-server broker:9092 --topic quickstart
 ```
+### With key
+```
+docker exec --interactive --tty broker kafka-console-producer --bootstrap-server broker:9092 --topic quickstart --property "key.separator=-" --property "parse.key=true"
+```
 ## Read messages from the topic
 ### Without key
 ```
