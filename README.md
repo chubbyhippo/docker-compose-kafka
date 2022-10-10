@@ -4,6 +4,10 @@ https://developer.confluent.io/quickstart/kafka-docker/
 ```
 docker exec broker kafka-topics --bootstrap-server broker:9092 --create --topic quickstart
 ```
+## List the topics
+```
+docker exec broker kafka-topics --bootstrap-server broker:9092 --list
+```
 ## Write messages to the topic
 ```
 docker exec --interactive --tty broker kafka-console-producer --bootstrap-server broker:9092 --topic quickstart
